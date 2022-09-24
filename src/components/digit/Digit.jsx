@@ -1,6 +1,7 @@
-import { ACTIONS } from "./App";
+import { ACTIONS } from '../computation/Computation';
+import './digit.css';
 
-const DigitButton = ( {dispatch, digit} ) => {
+const Digit = ( {dispatch, digit} ) => {
   return (
     <button 
         onClick={ () => dispatch( {type: ACTIONS.ADD_DIGIT, payload: {digit} }) }
@@ -10,4 +11,4 @@ const DigitButton = ( {dispatch, digit} ) => {
   )
 }
 
-export default DigitButton
+export default Digit

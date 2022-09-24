@@ -1,0 +1,19 @@
+.header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.top-text { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-text h2 { 
+    font-weight: 800;
+}
+
+.bottom-text { 
+    text-align: center;
+    color: deeppink;
+}

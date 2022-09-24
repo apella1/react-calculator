@@ -1,6 +1,7 @@
-import { ACTIONS } from "./App";
+import { ACTIONS } from '../computation/Computation';
+import './operations.css';
 
-const OperationButton = ( { dispatch, operation} ) => {
+const Operation = ( { dispatch, operation} ) => {
   return (
     <button 
         onClick={ () => dispatch( {type: ACTIONS.CHOOSE_OPERATION, payload: {operation}} ) }
@@ -10,4 +11,4 @@ const OperationButton = ( { dispatch, operation} ) => {
   )
 }
 
-export default OperationButton
+export default Operation
